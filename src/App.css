@@ -1,0 +1,88 @@
+
+.searchBar{
+  margin-top:16%;
+  margin-left: 35%;
+  display:flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom:-10%;
+  transition: 0.5s ease-in-out;
+}
+.searchBar input{
+  padding: 5%;
+  border-radius: 40px;
+  height: 0.5vh;
+}
+.searchBar button{
+  margin-top: 2%;
+  width: 40%;
+  align-self: center;
+  height: 5vh;
+  border-radius: 5px;
+}
+
+/* /////////////////////////////////////// */
+
+.list-cont{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+.list-item{
+  height: 50vh;
+  width: 20%;
+  margin-top: 10%;
+  position: relative;
+}
+.list-item img{
+  object-fit: cover;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+.list-item .des{
+  width: 80%;
+  position: absolute;
+  bottom: -50px;
+  color: transparent;
+  transition: 0.3s ease-in-out;
+  margin-left: 10px;
+}
+.list-item:hover{
+  .des{
+    color: white;
+  }
+  img{
+    filter: brightness(0.3);
+  }
+}
+
+/* ///////////////////////////////////// */
+
+.body{
+  position: relative;
+  /* overflow: hidden; */
+}
+body{
+  background-image: url("../public/bac100.png");
+  background-blend-mode:hue;
+}
+.details{
+  position: fixed;
+  top :50px;
+  left: 15%;
+  width: 60%;
+  background-color: gray;
+  padding: 5%;
+  border-radius: 30px;
+  transition: 0.5s ease-in-out;
+}
+.details img{
+  margin-right: 30px;
+  border-radius: 30px;
+}
+.details button{
+  margin-left: 95%;
+  height: 4vh;
+  width: 4vh;
+}
